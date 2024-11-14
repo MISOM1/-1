@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توب جيم</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* رأس الصفحة */
+        header {
+            background-color: #005F73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+
+        header nav a:hover {
+            background-color: #0A9396;
+            border-radius: 5px;
+        }
+
+        /* تصميم الأقسام */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #007F7F;
+            color: white;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        #home p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #0A9396;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005F73;
+        }
+
+        /* تصميم قسم الاشتراك */
+        #subscription {
+            background-color: #E9D8A6;
+            color: #333;
+        }
+
+        #subscription h2 {
+            font-size: 2.5rem;
+            color: #005F73;
+            margin-bottom: 20px;
+        }
+
+        #subscription ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #subscription ul li {
+            margin-bottom: 15px;
+        }
+
+        /* تصميم الأنظمة الغذائية */
+        #diet {
+            background-color: #F4A261;
+            color: white;
+        }
+
+        #diet h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* تصميم قسم الاتصال */
+        #contact {
+            background-color: #2A9D8F;
+            color: white;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            background-color: #264653;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact input[type="submit"] {
+            background-color: #0A9396;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #005F73;
+        }
+
+        footer {
+            background-color: #005F73;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* التنسيق المتجاوب */
+        @media (max-width: 768px) {
+            header nav {
+                display: block;
+                text-align: center;
+            }
+
+            header nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #contact form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>توب جيم</h1>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#subscription">الاشتراك</a>
+            <a href="#diet">الأنظمة الغذائية</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- قسم الرئيسية -->
+    <section id="home">
+        <h2>مرحبًا بكم في توب جيم</h2>
+        <p>ابدأ رحلتك مع اللياقة البدنية اليوم!</p>
+        <a href="#subscription" class="button">تسجيل الاشتراك</a>
+    </section>
+
+    <!-- قسم الاشتراك -->
+    <section id="subscription">
+        <h2>الاشتراك في توب جيم</h2>
+        <p>اختَر الخطة التي تناسبك:</p>
+        <ul>
+            <li>اشتراك شهري - 200 جنيه</li>
+            <li>اشتراك سنوي - 2000 جنيه</li>
+            <li>اشتراك نصف سنوي - 1000 جنيه</li>
+        </ul>
+
+        <h3>أسماء المشتركين:</h3>
+        <ul>
+            <li>أحمد علي</li>
+            <li>فاطمة محمد</li>
+            <li>محمود سعد</li>
+            <li>سارة حسين</li>
+            <li>عادل مصطفى</li>
+        </ul>
+
+        <a href="signup.html" class="button">التسجيل الآن</a>
+    </section>
+
+    <!-- قسم الأنظمة الغذائية -->
+    <section id="diet">
+        <h2>الأنظمة الغذائية</h2>
+        <p>اختر النظام الغذائي المناسب لك:</p>
+        <ul>
+            <li>نظام غذائي لخسارة الوزن - يحتوي على وجبات منخفضة السعرات الحرارية</li>
+            <li>نظام غذائي لزيادة الكتلة العضلية - يحتوي على وجبات غنية بالبروتين</li>
+            <li>نظام غذائي للحفاظ على الوزن - يحتوي على وجبات متوازنة</li>
+        </ul>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>إذا كان لديك أي استفسار، لا تتردد في التواصل معنا!</p>
+        <form action="contact.php" method="POST">
+            <label for="name">اسمك:</label>
+            <input type="text" id="name" name="name" placeholder="اسمك" required>
+            
+            <label for="email">بريدك الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+            
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+            
+            <input type="submit" value="إرسال الرسالة">
+        </form>
+
+        <h3>الردود على الرسائل:</h3>
+        <p>رد من فريقنا: "شكرًا لتواصلك معنا. سيتم الرد على استفسارك قريبًا!"</p>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>© 2024 جميع الحقوق محفوظة. توب جيم</p>
+    </footer>
+
+</body>
+</html>
